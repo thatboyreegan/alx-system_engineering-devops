@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#this script displays numbers from 1 to 100, fizz, buzz and fizzbuzz
+
+num=1
+
+while ((num <= 100)); do
+if ((num % 5 == 0 && num % 3 == 0)); then
+echo "FizzBuzz"
+elif ((num % 5 == 0)); then
+echo "Buzz"
+elif ((num % 3 == 0)); then
+echo "Fizz"
+else
+echo "$num"
+fi
+((num++))
+done

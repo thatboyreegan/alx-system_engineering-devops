@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#This script displays Best school, bad luck and good luck on different iterations.
+
+i=0
+
+while ((i < 10)); do
+
+if ((i == 3))
+then
+echo "bad luck"
+elif ((i == 7))
+then
+echo "good luck"
+else
+echo "Best school"
+fi
+((i++));
+done
