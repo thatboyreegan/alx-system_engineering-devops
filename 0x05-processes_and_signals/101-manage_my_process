@@ -20,6 +20,6 @@ restart)
     echo "manage_my_process restarted"
     ;;
 *)
-    echo "usage: manage_my_process {start|stop|restart}"
+    echo "Usage: manage_my_process {start|stop|restart}"
     ;;
 esac
