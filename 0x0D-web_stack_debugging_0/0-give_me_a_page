@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# THIS Script fixes the apache server on the provided container
+
+service apache2 start
