@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#This script configures a new ubuntu machine to respect given requirements
+
+
+sudo apt-get -yqq update
+sudo apt-get -y install nginx
+
+sudo chown -R "$USER": "$USER" /var/www/html
+sudo chmod -R "0755" /var/www/html
+
+echo "Hello World!" > /var/www/html/index.html
+sudo service nginx restart
